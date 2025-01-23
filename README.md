@@ -1,2 +1,4 @@
-# Game-2.0
-"Simple web-based mini game built using Vite and Web3 technologies. Users can play and interact with the game directly through the Telegram bot."
+# Untitled
+
+A Pen created on CodePen.io. Original URL: [https://codepen.io/Rashedul-Islam-the-builder/pen/KKOLpWr](https://codepen.io/Rashedul-Islam-the-builder/pen/KKOLpWr).
+

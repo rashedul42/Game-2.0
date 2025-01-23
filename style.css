@@ -1,0 +1,171 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  height: 100vh;
+
+  background-color: #e0e0e0;
+
+  font-family: Arial, sans-serif;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+#gameContainer {
+
+  position: relative;
+
+  width: 100vw;
+
+  height: 500px; /* Scene height */
+
+  background: linear-gradient(135deg, #2c3e50, #3498db); /* Updated background */
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+#scoreBoard, #timeLeft {
+
+  position: absolute;
+
+  top: 10px;
+
+  font-size: 20px;
+
+  color: white;
+
+}
+
+#scoreBoard {
+
+  left: 10px;
+
+}
+
+#timeLeft {
+
+  right: 10px;
+
+}
+
+#startButton {
+
+  position: absolute;
+
+  bottom: 20px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 10px 20px;
+
+  font-size: 18px;
+
+  background-color: #4CAF50;
+
+  color: white;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+
+}
+
+#startButton:hover {
+
+  background-color: #45a049;
+
+}
+
+#fallingGolds {
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+.gold {
+
+  position: absolute;
+
+  top: -10vw; /* Start above the screen */
+
+  width: 15vw;  /* Bigger gold size */
+
+  height: 15vw; /* Gold size same */
+
+  background-color: gold;
+
+  border-radius: 50%; /* Make it circular */
+
+  cursor: pointer;
+
+  box-shadow: 0 0 15px rgba(255, 223, 0, 0.6);
+
+  opacity: 0;
+
+  animation: fall linear infinite, fadeIn 0.5s ease-out forwards;
+
+}
+
+@keyframes fall {
+
+  to {
+
+    top: 100%;
+
+  }
+
+}
+
+@keyframes fadeIn {
+
+  0% {
+
+    opacity: 0;
+
+    transform: scale(0.5);
+
+  }
+
+  50% {
+
+    opacity: 0.7;
+
+    transform: scale(1.2);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+  }
+
+}
